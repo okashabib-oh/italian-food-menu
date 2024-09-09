@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(252, 252, 212);
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.recipe {
+  display: flex;
+  width: 40%;
+  background-color: rgb(255, 235, 171);
+  align-items: center;
+  border-radius: 20px;
+}
+
+.product-image {
+  width: 20%;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.head {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 100;
+}
+
+.head h1 {
+  color: #fbcd00;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.head h3 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.head p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.product-info {
+  margin-left: 15px;
+}
+
+.orderSection {
+  display: flex;
+  justify-content: center;
+}
+
+.orderBtn {
+  background-color: yellow;
+  border: none;
+  padding: 16px;
+  border-radius: 10px;
+  transition: all 0.8s ease-in-out;
+}
+
+.orderBtn:hover {
+  background-color: rgb(255, 255, 86);
+  cursor: pointer;
+  border-bottom: 3px solid gray;
+  transition: all 0.8s ease-in-out;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.recipe {
+  display: flex;
+  width: 40%;
+  background-color: rgb(255, 235, 171);
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+  transition: flex-direction 0.3s ease;
+}
+
+.product-image {
+  width: 20%;
+  margin-left: 10px;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.product-info {
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .recipe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .product-info {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
